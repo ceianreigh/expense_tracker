@@ -45,12 +45,15 @@ def main():
         elif choice == 2:
             print('\nAll expenses:')
             list_expenses(expenses)
+            print()
         elif choice == 3:
             print(f'\nTotal expenses: {total_expenses(expenses)}')
+            print()
         elif choice == 4:
             category = input('Enter the category to filter: ')
             print(f'\nExpenses for category {category}:')
             list_expenses(filter_expenses(expenses, category))
+            print()
         elif choice == 5:
             print('Thank you for using the Expense Tracker!')
             break
