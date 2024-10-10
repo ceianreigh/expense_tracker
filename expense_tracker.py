@@ -8,6 +8,11 @@ def add_expense(expenses, amount, category):
 def list_expenses(expenses):
     for expense in expenses:
         print(f"Category: {expense['category']}, Amount: {expense['amount']}")
+
+# show total expenses
+def total_expenses(expenses):
+    return sum(map(lambda expense: expense['amount'], expenses))
+
 def main():
     expenses = []
     
