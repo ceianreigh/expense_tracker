@@ -39,9 +39,12 @@ def main():
 
         # logic to handle the user's choice
         if choice == 1:
-            amount = float(input('Enter the amount: '))
-            category = input('Enter the category: ')
-            add_expense(expenses, amount, category)
+            continue_adding = 'y'
+            while continue_adding == 'y':
+                amount = float(input('Enter the amount: '))
+                category = input('Enter the category: ')
+                add_expense(expenses, amount, category)
+                continue_adding = input('Do you want to add another expense? (y/n): ')
         elif choice == 2:
             print('\nAll expenses:')
             list_expenses(expenses)
