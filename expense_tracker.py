@@ -15,5 +15,6 @@ def main():
 
         for key, value in choices.items():
             print(f'{key}. {value}')
-        break
+        
+        choice = int(input('\nEnter your choice: '))
 main()
