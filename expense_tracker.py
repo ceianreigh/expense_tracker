@@ -38,4 +38,21 @@ def main():
         choice = int(input('\nEnter your choice: '))
 
         # logic to handle the user's choice
+        if choice == 1:
+            amount = float(input('Enter the amount: '))
+            category = input('Enter the category: ')
+            add_expense(expenses, amount, category)
+        elif choice == 2:
+            print('\nAll expenses:')
+            list_expenses(expenses)
+        elif choice == 3:
+            print(f'\nTotal expenses: {total_expenses(expenses)}')
+        elif choice == 4:
+            category = input('Enter the category to filter: ')
+            print(f'\nExpenses for category {category}:')
+            list_expenses(filter_expenses(expenses, category))
+        elif choice == 5:
+            print('Thank you for using the Expense Tracker!')
+            break
+
 main()
