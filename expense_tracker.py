@@ -16,5 +16,8 @@ def main():
         for key, value in choices.items():
             print(f'{key}. {value}')
         
+        # get the user's choice
         choice = int(input('\nEnter your choice: '))
+
+        # logic to handle the user's choice
 main()
