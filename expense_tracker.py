@@ -13,6 +13,10 @@ def list_expenses(expenses):
 def total_expenses(expenses):
     return sum(map(lambda expense: expense['amount'], expenses))
 
+# filter expenses by category
+def filter_expenses(expenses, category):
+    return filter(lambda expense: expense['category'] == category, expenses)
+
 def main():
     expenses = []
     
