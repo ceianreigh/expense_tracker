@@ -2,7 +2,7 @@
 # add expense
 def add_expense(expenses, amount, category):
     expenses.append({'amount': amount, 'category': category})
-    print('Expense added.')
+    print('Expense added.\n')
 
 # list all expenses
 def list_expenses(expenses):
