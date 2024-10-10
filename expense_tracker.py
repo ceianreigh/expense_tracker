@@ -1,4 +1,9 @@
 # learning lambda functions by building an expense tracker
+# add expense
+def add_expense(expenses, amount, category):
+    expenses.append({'amount': amount, 'category': category})
+    print('Expense added.')
+
 def main():
     expenses = []
     
